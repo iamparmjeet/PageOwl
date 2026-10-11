@@ -50,7 +50,7 @@ Migration `0008_sad_roland_deschain.sql` changes the accent and theme database d
 
 ## Setup
 
-To create a fresh project from the versioned [GitHub Packages scaffold CLI](./packages/create-pageowl/README.md), run `create-pageowl my-pageowl`. The CLI clears this repository's live D1 ID from the generated config before you provision your own database. You can also download a tagged source archive from [Releases](https://github.com/iamparmjeet/PageOwl/releases); when using a source archive directly, replace the D1 ID in `wrangler.jsonc` before deploying.
+To create a fresh project from the versioned [GitHub Packages scaffold CLI](./packages/create-pageowl/README.md), run `create-pageowl my-pageowl` after configuring GitHub Packages authentication. The CLI clears this repository's live D1 ID from the generated config before you provision your own database. The CLI is an npm-format package **hosted on GitHub Packages**, not yet on npmjs.com. You can also download a tagged source archive from [Releases](https://github.com/iamparmjeet/PageOwl/releases); when using a source archive directly, replace the D1 ID in `wrangler.jsonc` before deploying.
 
 1. **Install dependencies**
 

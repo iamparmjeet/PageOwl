@@ -183,6 +183,7 @@ The backup restore slice is merged and its new schema and Worker code have been 
 
 ## Deferred Enhancements
 
+- Publish the `create-pageowl` scaffold CLI to npmjs.com so public installation does not require GitHub Packages authentication. First confirm the npm account controls the chosen scope/name, then publish the same versioned CLI source as the GitHub Packages release; keep the root app unpublished. See `packages/create-pageowl/README.md` for the Bun-only publication steps. The scoped package runs as `bunx @iamparmjeet/create-pageowl`; the shorter unscoped invocation needs its own npmjs.com package.
 - Configure isolated Cloudflare Workers PR previews with a `previews` block, staging D1/R2 bindings, and Preview-specific secrets before making the branch-build check a release gate. Retrying the unchanged build does not fix its missing configuration.
 - Command palette and keyboard shortcuts.
 - Streaming JSON parsing for very large backup files on memory-constrained browsers, and automated cleanup of staging objects after abandoned uploads.
